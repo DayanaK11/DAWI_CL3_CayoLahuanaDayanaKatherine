@@ -1,1 +1,43 @@
 
+<div class="card text-center">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:4200/ejercicio1">Ejercicio01</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:4200/ejercicio2">Ejercicio02</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:4200/ejercicio3">Ejercicio03</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="true" href="http://localhost:4200/ejercicio4">Ejercicio04</a>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body" style="text-align: center;">
+      <h1>EJERCICIO04</h1>
+      <p>Mostrar la tabla de caracteres ASCII a partir del código 32 hasta el 164 sin incluir las minúsculas (rango del 97 al 122).</p>
+      <div class="card mb-3" style="width: 18rem; margin: auto;">
+        <div class="card-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Carácter</th>
+                <th>Código ASCII</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let char of asciiCharacters">
+                <td>{{ char.character }}</td>
+                <td>{{ char.code }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>        
+    </div>
+  </div>
+  
+
