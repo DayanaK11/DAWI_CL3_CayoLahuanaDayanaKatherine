@@ -1,0 +1,62 @@
+<div class="card text-center">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a class="nav-link "  href="http://localhost:4200/ejercicio1">Ejercicio01</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="true" href="http://localhost:4200/ejercicio2">Ejercicio02</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="http://localhost:4200/ejercicio3" >Ejercicio03</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="http://localhost:4200/ejercicio4" >Ejercicio04</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card-body" style="text-align: center;">
+
+        <h1>EJERCICIO02</h1>
+        <p>2.	Elabora una aplicación que solicite la edad de  2  hermanos  y  muestre  un mensaje </p>
+        <p>
+            indicando la edad del mayor y cuantos años de diferencia tiene con el menor.
+        </p>
+          
+        <div class="card mb-3" style="width: 18rem;">
+            <div class="card-body">
+                <div >
+                    <div class="mb-3">
+                      <label for="txthermano1" class="form-label">Ingresar edad primer hermano </label>
+                      <input type="number" class="form-control" 
+                      [(ngModel)]="ejercicio2.hermano1"
+                      id="txthermano1" placeholder="ingresar edad">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="txthermano2" class="form-label">Ingresar edad segundo hermano </label>
+                        <input type="number" class="form-control" 
+                        [(ngModel)]="ejercicio2.hermano2"
+                        id="txthermano2" placeholder="ingresar edad">
+                      </div>
+
+
+                  <hr/>
+                  <button type="button" (click)="calcularMayor()"
+                  class="btn btn-success">CALCULAR</button>
+                  <br/>
+                  <br/>
+                  @if (mostrarMensaje) {
+                      <div class="alert alert-secondary" role="alert">
+                          {{mensaje1 +ejercicio2.mayor }}
+                      </div>
+                      <div class="alert alert-secondary" role="alert">
+                        {{mensaje2 +ejercicio2.diferencia }}
+                    </div>
+                  }
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>

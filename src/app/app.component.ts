@@ -10,4 +10,11 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'DAWI_CL3_CayoLahuanaDayanaKatherine';
+  ejercicioSeleccionado = {
+    number:0
+  } 
+
+  seleccionarEjercicio(numero: number): void {
+    this.ejercicioSeleccionado.number = numero;
+  }
 }
